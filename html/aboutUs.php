@@ -1,11 +1,3 @@
-<?php 
-
-	if(isset($_GET['name']))
-	{
-		$div = $_GET['name'];
-	}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -173,7 +165,7 @@
 	
 	$(document).ready(function(){
 		
-		goToByScroll(<?php if(isset($div)){ echo $div; }else{echo '"#top"';}?>);
+		goToByScroll(<?php if(isset($_GET['name'])){ echo htmlspecialchars($_GET['name']); }else{echo '"#top"';}?>);
 		
 	});
 	
