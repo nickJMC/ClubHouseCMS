@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request more information.">
+    <meta name="author" content="Braden Ericson">
+
+    <title>UST Computer Science Club</title>
+
+    <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Add custom CSS here -->
+   <style>
+	.navbar-inverse
+	{
+	   background-image: url('images/ustpurple.png');
+	   background-repeat: repeat-x;
+	}
+
+   </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="http://www.stthomas.edu/cisc/csclub">About Us</a>
+		     <li>
+			<a href="http://www.stthomas.edu/ustclubs/directory">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+<!-- contactUs.html -->
+
+<p>
+	Please complete the form below and press “Request Information”.
+	An email will be automatically sent to the Club President and
+	Club Advisor.
+</p>
+<form role='form' id="command" method="post" action="http://www.stthomas.edu/ustclubs/directory/clubcontact.htm?adminView=&amp;clubcode=CMP">
+ <div class="form-group">
+    <label for="firstName">First Name:</label>
+	<input id="firstName" class='form-control' placeholder="first name" name="firstName" type="text" value=""></input>
+  </div>
+  
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+	<input id="lastName" class='form-control' placeholder="last name" name="firstName" type="text" value=""></input>
+  </div>
+  
+   <div class="form-group">
+    <label for="email">Email:</label>
+	<input id="email" class='form-control' placeholder="address@domain.com" name="firstName" type="email" value=""></input>
+  </div>  
+  
+   <div class="form-group">
+    <label for="yearInSchool">Year in School:</label>
+								<select class='form-control' id="yearInSchool" name="yearInSchool">
+									<option value="">Select One</option>
+									<option value="Freshman">Freshman</option><option value="Sophomore">Sophomore</option><option value="Junior">Junior</option><option value="Senior">Senior</option><option value="Other">Other</option>
+								</select>
+   </div>
+   
+   <div class="form-group">
+    <label for="comments">Comments:</label>
+	<input id="comments" class='form-control' placeholder="25char limit" name="firstName" type="text" value=""></input>
+  </div>  
+
+   <div class="form-group">
+	<input class="clubThankYouSubmit form-control" type="submit" value="Request Information">
+   </div>  		
+</form>
+
+</body>
+</html>
+			

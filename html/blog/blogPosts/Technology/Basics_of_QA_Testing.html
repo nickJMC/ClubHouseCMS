@@ -1,0 +1,117 @@
+
+                <!-- This blog post partial was generated with the simple blog CMS designed by Braden Ericson -->
+                <h1>Basics of QA Testing</h1>
+                <p class="lead">by <a href="aboutUs.php?name=Amanda">Amanda Maricle-Roberts</a>
+                </p>
+                <hr>
+                <p>
+                    <span class="glyphicon glyphicon-time"></span> Posted on February 22, 2014 at 3:23 PM</p>
+                <hr>
+				
+                <p>
+                <h1>Q/A Testing for Dummies</h1>
+Hi everybody! So in light of our recent Windows app building workshop, I thought it might be a good idea to share some intel on how to effectively test your apps.  While the basic apps made through <a href="http://appstudio.windowsphone.com/?stay=1" target="_blank">App Studio</a> provides most of the content and will (hopefully!) have done thorough testing themselves, I can imagine that many of you would like to expand your apps and do some of your own coding.  In that case, read on! Your app will need to be well tested before submission and I will give you the low down on how to do so.
+<br>
+<h3>My Background</h3>
+You may be asking, why the heck should I be listening to you?  You haven’t even submitted an app!  This is true in a sense but I have already helped out on about 15 different apps being submitted to the Play Store and App Store.  I work as an intern at <a href="http://www.mobilerealtyapps.com" target="_blank">Mobile Realty Apps</a>, a startup working in downtown Minneapolis who makes, wait for it….. mobile apps for realties. (If you have ever downloaded the app for Edina Realty, you have seen some of their work in action.) My job is Q/A testing, which on a day-to-day basis involves sitting around with 1 - 4 different mobile devices, testing an app to see how it behaves on different platforms.  I’ve only just started but basic app testing comes quickly, especially exploratory testing, which is what I do.
+<br>
+<h3>Exploratory Testing</h3>
+Exploratory testing is different from automated testing.  Automated testing is obviously running automated tests on your application to make sure it behaves properly.  Due to the small size of your typical beginners Windows app, automated testing is pretty ridiculous to implement. So instead we will do exploratory testing.  It is more fun and more fulfilling, but also harder to replicate and harder to do as a team.  That’s why my company has a very specific system they use to keep track of bugs and keep everyone up to date on what needs to happen.  In fact, the hardest part of my job is actually documenting the bugs, but it is also the most important, as you will see.
+<br><br>
+So what exploratory testing is, in a nutshell, is you sitting down with your app and running it in as many ways as possible, testing every single function in as many ways as you can possibly imagine.  As you can probably already tell, it is hard to share with someone else what you have and haven’t tested.  In fact though, the more people who do exploratory testing on an app, the better, because each person thinks of combinations of functions different and will have different usability ideas than the other.  The problem, of course, is that every tester has to run through the app completely on their own, keeping track of what unique bugs they find, and what bugs have been found by other testers.
+<br><br>
+You may still be skeptical, thinking that this doesn’t apply for such small apps.  And that may very well be the case if you are solely and exclusively using the functions that AppStudio has provided.  But if you are coding even the smallest bits of functionality yourself (i.e. a contact button or a animated splash screen), testing is imperative.
+<br><br>
+But how do you do it?  Follow these easy steps. 
+<br>
+<h3>Steps</h3>
+<ol>
+<li>Before you can even start testing, make sure you have your functionality in order.  This may seem trivial, especially if you are also the developer, but it can prove very worthwhile.  You don’t have to record it anywhere (though I do recommend keeping some sort of guidelines document) but just make sure you are absolutely sure what every button, every menu, every event should do.  This will save you time in the long run.</li>
+<li>Sit down with some time, some sort of blank document or a pen and paper, and a mobile device running your application.</li>
+<li>Open your app.  Make sure the splash screen is right, make sure the loading speed is feasible, make sure you open to the right page, try opening and closing quickly.</li>
+<li>Play around with it.  No test is too small and believe me when I say that really weird events can happen sometimes.</li>
+<li>Take screenshots!!  I can’t stress how important this is.  The first thing you do when you find a bug is to take a screenshot.  At my job, it is 50% for the purpose of me remembering to write up a bug for a particular problem if I get distracted, and 50% so the developers don’t think I’m crazy.  A picture is proof!!!
+<br><br>
+Sometimes it is even useful to open the picture up in Paint and put a big red circle around the issue.  This is useful especially if the bug is of a lack of something or really small.  (Or it is useful if the developers don’t spend a lot of time looking at the bug before they come knocking down my door with questions!)
+<br><br>
+<i>Sidenote:</i>  If you didn’t already know this (and don’t feel ashamed, I didn’t know how to do this on an Apple device), taking screenshots can be done the following ways:<br>
+	 - On Android versions 4.0 and up, by holding the power and down volume buttons simultaneously (it is possible on lower versions of Android but definitely more difficult and may require rooting the device so look it up)<br>
+	 - On iOS devices, by holding the home button and the down volume simultaneously<br>
+	 - On Windows devices, by pressing the home button then pressing the power button</li>
+<br>
+<li>Describe it. Good bug reports have three parts (sometimes four if you want but not necessarily)
+<ul>
+<li>Description of the bug.  This is useful if it isn’t evident from the following steps or the screenshot.  You also should give the date and version (if you are keeping track) of the bug as well as data about the OS on which it is run.  I thought this wasn’t a big deal
+(an app should run the same on iOS 5 and 7, right?) until I was finding a slew of issues on iOS 5 that weren’t coming up on later versions. Backwards compatibility is a sticky issue so you should try to separate OS-based bugs as much as possible.</li>
+<li>Steps to Reproduce.  If you don’t do anything else, do this step.  Make sure you lay out the exact order in which to get the bug.  If you try it again and it doesn’t happen, figure out why before you try to fix it.  Try to see if you can get to the bug in a more specific or more
+general way.  
+(The only time when you can avoid this step is if the steps are so mind-numbingly obvious that you are falling asleep writing them.) <br>
+i.e. Steps to Reproduce: <br>
+	1) Open app.<br>
+	2) App crashes.<br>
+</li>
+<li>Expected Results.  This should briefly lay out what you think should happen.  One sentence is fine as long as it is clear. </li>
+<li>Actual Results.  This should lay out what actually happened.  Point to the screenshot if necessary. </li>
+</ul>
+</ol>
+
+And there you have it!  A good description! <br><br>
+<h3>Real Life Example</h3>
+
+<img src="http://personal.stthomas.edu/mari2295/blog_1.png" class="img-responsive" alt="Screenshot of a bug showing null contact information"></img>
+<br><br>
+The screenshot I am showing is a bug from is v1.0.1 of an app that isn’t yet out in the Play Store, so enjoy a behind the scenes look! <br><br>
+
+Here are the necessary requirements for the bug in the app I was testing:<br><br>
+<table class="table table-bordered">
+<tr>
+<td><b>Button</b></td>
+<td><b>Function</b></td>
+<td><b>Design</b></td>
+</tr>
+<tr>
+<td>Call link on homepage sidebar</td>
+<td>Calls active realty’s office</td>
+<td>Should say phone number and respond when tapped on</td>
+</tr>
+<tr>
+<td>Email link on homepage sidebar</td>
+<td>Opens up an option for which email to use and composes a blank email to that address</td>
+<td>Should list email address and respond when tapped on</td>
+</tr>
+</table>
+<br>
+Here is the bug from the screenshot laid out beautifully in a bug report:<br><br>
+
+<h4>Description</h4>
+The contact links on the sidebar are displaying null values.<br>
+App v1.0.1, run on an HTC One with Android v4.3
+<br><br>
+
+<h4>Steps to Reproduce</h4>
+<ol>
+<li>Open app</li>
+<li>Tap top left to open sidebar.</li>
+</ol>
+<br>
+
+<h4>Expected Results</h4>
+The contact information should be neatly displayed.
+<br><br>
+
+<h4>Actual Results</h4>
+The contact information is null and displayed (comma-delimited) on one line.  (see screenshot)
+<br><br>
+<h3>Summary</h3>
+That’s all there is to it.  I write a lot of these and yet still the developers have questions.  Sometimes they have questions I would never think of like: were you logged in when the error occurred?  Does the error happen when you pick a realtor for your app?
+<br><br>
+That’s why it's useful to have more than one pair of eyes looking at it.  And those kinds of questions also make you better at Q/A.  My goal is to eventually not even have those questions because my bug testing is so thorough but that is probably unlikely!
+<br><br>
+If you have any questions, don’t hesitate to let me know at a Computer Science Club meeting or by email (mari2295@stthomas.edu).  As your apps develop, I am also happy to help you test your apps and set up a good framework for keeping track of bugs.
+<br><br>
+Sayonara and happy testing!
+<br><br>
+ - <i>Amanda</i>
+				</p>
+                </p>
+                <hr>

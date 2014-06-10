@@ -1,0 +1,32 @@
+<!--pokemon Form-->
+<p style='text-align: center;'>
+Participants will battle through the <a href='http://play.pokemonshowdown.com'>Pokemon Showdown</a> platform. Rules are <a href='http://www.smogon.com/xyhub/tiers'>Smogon OU</a>. If you have any questions, 
+feel free to contact Andrew at schl4441.
+</p>
+
+<form role="form" action='LANPartyFormSubmission.php' method='post'>
+  <div class="form-group">
+    <label for="fname">First Name</label>
+    <input name='fname' type="text" class="form-control" id="fname" placeholder="Enter first name" required>
+  </div>
+  <div class="form-group">
+    <label for="lname">Last Name</label>
+    <input name='lname' type="text" class="form-control" id="lname" placeholder="Enter last name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input name='email' type="email" class="form-control" id="email" placeholder="Enter your Email Address" required>
+  </div>
+  
+   <div class="form-group">
+    <label for="sname">Account Name</label>
+    <input name='sname' type="text" class="form-control" id="sname" placeholder="Enter your Account Name">
+  </div>
+  
+  <input type='hidden' name='specialKey' value='5'></input>
+  <input type='hidden' name='dir' value='poke'></input>
+  
+  
+  <button id='pokeSubmit' type="submit" value='submit'class="btn btn-default">Submit</button>
+</form>

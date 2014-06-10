@@ -1,0 +1,17 @@
+
+                <!-- This blog post partial was generated with the simple blog CMS designed by Braden Ericson -->
+                <h1>testpost6</h1>
+                <p class="lead">by <a href="aboutUs.php?name=Braden">ericson6</a>
+                </p>
+                <hr>
+                <p>
+                    <span class="glyphicon glyphicon-time"></span> Posted on February 16, 2014 at 11:25 PM</p>
+                <hr>
+				
+                <p>
+                this one I hit the html button once, it should post as normal
+<h6>this is a h6 header</h6>
+<h5>THIS IS h5</h5>
+				</p>
+                </p>
+                <hr>

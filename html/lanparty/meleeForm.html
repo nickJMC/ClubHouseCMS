@@ -1,0 +1,21 @@
+<!--Melee Form-->
+<form role="form" action='LANPartyFormSubmission.php' method='post'>
+  <div class="form-group">
+    <label for="fname">First Name</label>
+    <input name='fname' type="text" class="form-control" id="fname" placeholder="Enter first name" required>
+  </div>
+  <div class="form-group">
+    <label for="lname">Last Name</label>
+    <input name='lname' type="text" class="form-control" id="lname" placeholder="Enter last name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input name='email' type="email" class="form-control" id="email" placeholder="Enter your Email Address" required>
+  </div>
+  <input type='hidden' name='specialKey' value='5'></input>
+  <input type='hidden' name='dir' value='melee'></input>
+  
+  
+  <button id='meleeSubmit' type="submit" value='submit'class="btn btn-default">Submit</button>
+</form>

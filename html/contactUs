@@ -1,0 +1,63 @@
+<!-- contactUs.html -->
+<form id="command" method="post" action="/directory/clubcontact.htm?adminView=&amp;clubcode=CMP">
+				<table class="departmenttable">
+					<tbody><tr class="instruction-text">
+						<td colspan="2">
+							<p>
+								Please complete the form below and press “Request Information”.
+								An email will be automatically sent to the Club President and
+								Club Advisor.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="percent25">
+							<strong>First Name :</strong>
+						</td>
+						<td class="right">
+							<input id="firstName" name="firstName" type="text" value="">
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="percent25">
+							<strong>Last Name :</strong>
+						</td>
+						<td class="right">
+							<input id="lastName" name="lastName" type="text" value="">
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="percent25">
+							<strong>Email :</strong>
+						</td>
+						<td class="right">
+							<input id="email" name="email" type="text" value="">
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="percent25">
+							<strong>Year in School:</strong>
+						</td>
+						<td class="right">
+							<select id="yearInSchool" name="yearInSchool">
+								<option value="">Select One</option>
+								<option value="Freshman">Freshman</option><option value="Sophomore">Sophomore</option><option value="Junior">Junior</option><option value="Senior">Senior</option><option value="Other">Other</option>
+							</select>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="percent25">
+							<strong>Comments:</strong>
+						</td>
+						<td class="right">
+							<input id="comments" name="comments" type="text" value="" size="25">
+							
+						</td>
+					</tr>
+				</tbody></table>
+				<input class="clubThankYouSubmit" type="submit" value="Request Information">
+			</form>
